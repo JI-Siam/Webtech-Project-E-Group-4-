@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Management System</title>
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+  <h1>Restaurant Management System</h1>
+
+  <div class="login-box">
+    <form action="login.php" method="POST" onsubmit="return validateForm()">
+      <label for="username">Name:</label>
+      <input type="text" id="username" name="username" placeholder="Enter username">
+
+      <label for="password">Pass:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password">
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p class="signup-text">Don't have an account? <a href="#">Signup</a></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
