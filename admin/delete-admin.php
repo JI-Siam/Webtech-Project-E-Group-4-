@@ -20,10 +20,4 @@ else
    header ('location:'.SITEURL.'admin/manage-admin.php');
      }
 
-
-
-
-
-
-   
 ?>
