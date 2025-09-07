@@ -1,6 +1,4 @@
-<?php
-
-include ('../config/constants.php');
+<?php include ('../model/constants.php');
 
 
  $id = $_GET['id'];
@@ -12,12 +10,12 @@ include ('../config/constants.php');
 if($res ==true)
 {
    $_SESSION['delete']= "<div class='success'>Admin Deleted Sucessfully.</div>";
-   header ('location:'.SITEURL.'admin/manage-admin.php');
+   header ('location:'.SITEURL.'controller/manage-admin.php');
 }
 else
     {
           $_SESSION['delete']= "<div class='error'>Failed to Delete Admin. Try Again Later.</div>";
-   header ('location:'.SITEURL.'admin/manage-admin.php');
+   header ('location:'.SITEURL.'controller/manage-admin.php');
      }
 
 ?>

@@ -78,12 +78,12 @@ $res = mysqli_query($conn,$sql) or die (mysqli_error());
 if($res ==TRUE)
 {
     $_SESSION['add'] = "Admin Added Sucessfully";
-    header("location:".SITEURL.'admin/manage-admin.php');
+    header("location:".SITEURL.'controller/manage-admin.php');
 }
 else
 {
        $_SESSION['add'] = "Failed to Add Admin";
-    header("location:".SITEURL.'admin/add-admin.php');
+    header("location:".SITEURL.'controller/add-admin.php');
 }
 
 

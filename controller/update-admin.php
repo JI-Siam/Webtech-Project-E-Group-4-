@@ -19,7 +19,7 @@ if($res==true)
 }
 else
     {
-   header('Location:'.SITEURL. 'admin/manage-admin.php');
+   header('Location:'.SITEURL. 'controller/manage-admin.php');
 }
 
 }
@@ -77,13 +77,13 @@ if(isset($_POST['submit']))
     if ($res==true)
     {
        $_SESSION['update'] = "<div class= 'success'>Admin Updated Sucessfully .</div>";
-       header ('location:'.SITEURL.'admin/manage-admin.php');
+       header ('location:'.SITEURL.'controller/manage-admin.php');
 
     }
 else
     {
 $_SESSION['update'] = "<div class= 'error'>Failed to Delete Admin .</div>";
-       header ('location:'.SITEURL.'admin/manage-admin.php');
+       header ('location:'.SITEURL.'controller/manage-admin.php');
 
 
 }

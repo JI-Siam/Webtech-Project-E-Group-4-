@@ -114,6 +114,13 @@ table tr td{
 
 .footer{
     margin-top:0px;
-    background-color:red;
+    background-color:rgb(218, 120, 120);
     color: white;
+}
+.login {
+    border: 1px solid grey;
+    width: 20%;
+    margin: 10% auto;
+    padding: 2%;
+    text-align: center;  
 }
